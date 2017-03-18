@@ -1,0 +1,29 @@
+{
+  "name": "lost-and-found",
+  "version": "0.0.1",
+  "description": "Archive checking tool which produces md5 hashes for files and or directories, with the option of outputting to file",
+  "main": "lost-and-found.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halfs13/lost-and-found.git"
+  },
+  "keywords": [
+    "md5",
+    "hash",
+    "file",
+    "archive",
+    "checksum"
+  ],
+  "author": {
+    "name": "Josh Williams",
+    "email": "halfs13@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/halfs13/lost-and-found/issues"
+  },
+  "homepage": "https://github.com/halfs13/lost-and-found#readme"
+}
