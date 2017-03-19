@@ -25,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/halfs13/lost-and-found/issues"
   },
-  "homepage": "https://github.com/halfs13/lost-and-found#readme"
+  "homepage": "https://github.com/halfs13/lost-and-found#readme",
+  "dependencies": {
+    "bunyan": "^1.8.8",
+    "command-line-args": "^4.0.2",
+    "command-line-usage": "^4.0.0",
+    "lodash": "^4.17.4",
+    "md5-file": "^3.1.1",
+    "path-is-absolute": "^1.0.1"
+  }
 }
