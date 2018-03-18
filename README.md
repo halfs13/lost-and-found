@@ -1,21 +1,18 @@
-# lost-and-found
-Archive checking tool which produces md5 hashes for files and or directories, with the option of outputting to file
-
-
-#Lost and Found
+# Lost and Found
 
 Generates MD5 hashes for one or more files with the option to output results
 to a file. Can be used to validate a previously outputted hash file using the
 --verify or -v option.
 
-##Usage
+## Usage
 
 ```
 lost-and-found [options] <files>
 ```
 
-###Options
-
+### Options
+| Flag | Description |
+|------|-------------|
 | --files files | The input files for which to generate hashes or to validate hash contents |
 | -d, --debug | Use trace logging |
 | -q, --quiet | Limit logging to fatal errors |
