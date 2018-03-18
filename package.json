@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Archive checking tool which produces md5 hashes for files and or directories, with the option of outputting to file",
   "main": "lost-and-found.js",
+  "bin": "lost-and-found.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/halfs13/lost-and-found.git"

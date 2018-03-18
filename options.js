@@ -73,6 +73,7 @@ Can be used to validate a previously outputted hash file using the --verify or -
                 description: 'Print this usage guide.'
             },{
                 name: 'verify',
+                alias: 'v',
                 description: 'Verify the hash csv files provided to the files flag against the file system files'
             }]
         }];
