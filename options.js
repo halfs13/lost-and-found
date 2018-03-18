@@ -10,8 +10,8 @@ module.exports = (function() {
         multiple: true,
         defaultOption: true
     },{
-        name: 'verbose',
-        alias: 'v',
+        name: 'debug',
+        alias: 'd',
         type: Boolean
     },{
         name: 'quiet',
@@ -22,20 +22,16 @@ module.exports = (function() {
         alias: 'w',
         type: Boolean
     },{
-        name: 'outputdir',
-        alias: 'd',
-        type: String
-    },{
         name: 'outputfile',
         alias: 'o',
         type: String
     },{
-        name: 'input',
-        alias: 'i',
-        type: String
-    },{
         name: 'force',
         alias: 'f',
+        type: Boolean
+    },{
+        name: 'verify',
+        alias: 'v',
         type: Boolean
     }];
 
@@ -43,8 +39,9 @@ module.exports = (function() {
 
     if(!options.files || options.help) {
         const sections = [{
-            header: 'An app',
-            content: 'Generates something [italic]{very} important.'
+            header: 'Lost and Found',
+            content: 'Generates MD5 hashes for one or more files with the option to output results to a file. \
+Can be used to validate a previously outputted hash file using the --verify or -v option.'
         },{
             header: 'Usage',
             content: 'lost-and-found [options] <files>'
@@ -54,10 +51,10 @@ module.exports = (function() {
                 name: 'files',
                 defaultOption: true,
                 typeLabel: '[underline]{files}',
-                description: 'The input files process hashes'
+                description: 'The input files for which to generate hashes or to validate hash contents'
             },{
-                name: 'verbose',
-                alias: 'v',
+                name: 'debug',
+                alias: 'd',
                 description: 'Use trace logging'
             },{
                 name: 'quiet',
@@ -74,6 +71,9 @@ module.exports = (function() {
             },{
                 name: 'help',
                 description: 'Print this usage guide.'
+            },{
+                name: 'verify',
+                description: 'Verify the hash csv files provided to the files flag against the file system files'
             }]
         }];
 
