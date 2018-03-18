@@ -1,6 +1,6 @@
 {
   "name": "lost-and-found",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Archive checking tool which produces md5 hashes for files and or directories, with the option of outputting to file",
   "main": "lost-and-found.js",
   "bin": "lost-and-found.js",
